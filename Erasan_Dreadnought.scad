@@ -1,0 +1,85 @@
+Rumpf=4;
+Wing=5;
+
+
+rotate([0,90,0]){
+	scale([0.4,1,1]){
+		translate([-5.2,0,-37.5/2]){
+			scale([1,1,1]){
+				rotate([0,-15,180]){
+				cylinder(h=75/2,d1=25,d2=45,$fn=Rumpf,center=true);
+				}
+			}
+		}
+		translate([0,0,37.5/2]){
+			scale([1,1,1]){
+				rotate([0,0,180]){
+					cylinder(h=75/2,d1=45,d2=30,$fn=Rumpf,center=true);
+				}
+			}
+		}
+		translate([-2,0,135/2+75/2-1.5]){
+			rotate([0,2,180]){
+				cylinder(h=135,d1=30,d2=12.5,$fn=Rumpf,center=true);
+			}
+		}
+		translate([-10,0,-35-75/2+5]){
+			rotate([0,0,180]){
+				scale([1,1,1]){
+					cylinder(h=35,d1=15,d2=25,$fn=Rumpf,center=false);}
+				}
+			}
+
+		translate([0,0,0]){
+			rotate([0,75,56]){
+				translate([0,2.35,25/2+17.5/2]){
+					rotate([-10,0,-2]){
+						scale([1.5,0.75,1]){
+							cylinder(h=55,d1=37,d2=15,$fn=Wing,center=true);
+						}
+					}
+				}
+			}
+		}
+		translate([-4,0,-15]){
+			rotate([0,90,180]){
+				translate([0,0,25/4+17.5/2]){
+					scale([1,0.3,0.65]){
+						rotate([0,0,0]){
+							cylinder(h=25,d1=35,d2=15,$fn=5,center=true);
+						}
+					}
+					}
+				}
+			}
+		translate([0,0,0]){
+			rotate([0,75,304]){
+				translate([0,-2.35,25/2+17.5/2]){
+					rotate([10,0,2]){
+						scale([1.5,0.75,1]){
+							cylinder(h=55,d1=37,d2=15,$fn=Wing,center=true);
+						}
+					}
+				}
+			}
+		}
+		translate([0,0,0]){
+			rotate([0,90,0]){
+				translate([0,0,25/2+17.5/2-9]){
+					scale([2.25,0.95,0.8]){
+						cylinder(h=25,d1=35,d2=15,$fn=4,center=true);
+					}
+					}
+				}
+			}
+		translate([0,0,0]){
+			rotate([0,90,-20]){
+				translate([0,0,25/2+17.5/2-5]){
+					scale([3.25,0.55,0.75]){
+						//cylinder(h=25,d1=35,d2=15,$fn=4,center=true);
+					}
+					}
+				}
+			}
+		}
+}
